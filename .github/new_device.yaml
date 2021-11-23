@@ -1,0 +1,48 @@
+name: Create a device
+description: Register a new device
+title: "Device Creation"
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Time to register your device
+  - type: dropdown 
+    id: device_type_major
+    attributes:
+      label: Device OS
+      description: What does the device run?
+      options:
+        - Android
+        - Fire OS
+        - Windows
+        - Linux
+        - iOS
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: device_type_minor
+    attributes:
+      label: Device Type
+      description: What type of device is the device?
+      options:
+        - Phone
+        - Tablet
+        - Laptop
+        - Assistant
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: serial
+    attributes:
+      label: What is the IMEI/Serial Number of the device? (N/A if you can't find it)
+    validations:
+      required: true
+  - type: textarea
+    id: comments
+    attributes:
+      label: Any additional comments?
+    validations:
+      required: false
