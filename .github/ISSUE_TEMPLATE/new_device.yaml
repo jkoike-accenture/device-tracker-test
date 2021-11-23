@@ -43,10 +43,10 @@ body:
   - type: input
     id: pin
     attributes:
-      label: Password/Pin Code
+      label: Passcode/Pin Code
     validations:
       required: false
-  - type: checkbox
+  - type: checkboxes
     id: misc
     attributes:
       label: Unlocked/Rooted
