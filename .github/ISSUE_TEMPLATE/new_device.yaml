@@ -40,6 +40,22 @@ body:
       label: What is the IMEI/Serial Number of the device? (N/A if you can't find it)
     validations:
       required: true
+  - type: input
+    id: pin
+    attributes:
+      label: Password/Pin Code
+    validations:
+      required: false
+  - type: checkbox
+    id: misc
+    attributes:
+      label: Unlocked/Rooted
+      description: Is the device unlocked or rooted?
+      options:
+        - label: Unlocked
+        - label: Rooted
+    validations:
+      required: false
   - type: textarea
     id: comments
     attributes:
