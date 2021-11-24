@@ -53,10 +53,13 @@ body:
     attributes:
       label: Model
       description: What is the device model?
+    validation:
+      required: true
   - type: input
     id: pin
     attributes:
       label: Passcode/Pin Code
+      description: What is the passcode/pin for the device (if any)
     validations:
       required: false
   - type: checkboxes
