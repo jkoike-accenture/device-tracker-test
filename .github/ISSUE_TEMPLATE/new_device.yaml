@@ -37,9 +37,22 @@ body:
   - type: input
     id: serial
     attributes:
-      label: What is the IMEI/Serial Number of the device? (N/A if you can't find it)
+      label: IMEI/Serial Number
+      description: What is the IMEI/Serial of the device (N/A if you can't find it)
     validations:
       required: true
+  - type: input
+    id: manufacturer
+    attributes:
+      label: Manufacturer
+      description: Who is the manufacturer of the device
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model
+      description: What is the device model?
   - type: input
     id: pin
     attributes:
