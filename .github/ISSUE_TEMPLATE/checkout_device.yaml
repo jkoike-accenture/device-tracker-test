@@ -1,7 +1,7 @@
 name: Checkout Device
 description: Checkout a device
 title: Device Checkout
-labels: ["automation"]
+labels: ["automation", "device_create"]
 body:
   - type: input
     id: device
