@@ -1,15 +1,12 @@
-const g = require("@actions/github");
-const gh = {
-    core: require("@actions/core"),
-    api: g.getOctokit(g.context.github.token).rest
-};
+const gh = require("@actions/github");
+const core = require("@actions/core")
+const token = core.getInput("auth_token", {required: true});
+const api = gh.getOctokit(token)
 
-const context = g.context;
+const context = gh.context.payload;
 
-const issue = gh.api.issues.get({
-    owner: context.payload.repository.owner.login,
-    repo: context.payload.repository.name,
-    issue_number: context.payload.issue.number
+const issue = api.issues.get({
+    ...context.issue
 });
 
 console.log(`Issue: ${JSON.stringify(issue)}`)
