@@ -1,0 +1,15 @@
+{
+  "name": "device-tracker-action",
+  "version": "0.0.1",
+  "description": "GH Action for device tracker. Beep boop.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0",
+    "sqlite3": "^4.2.0"
+  }
+}
