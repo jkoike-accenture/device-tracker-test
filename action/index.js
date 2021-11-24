@@ -11,4 +11,4 @@ const issue = api.issues.get({
     issue_number: context.issue.number
 });
 
-console.log(`Issue: ${JSON.stringify(issue)}`)
+console.log(`Issue #${context.issue.number}: ${JSON.stringify(issue.data)}`)
