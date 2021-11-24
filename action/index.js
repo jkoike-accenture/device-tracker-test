@@ -5,10 +5,12 @@ const octokit = gh.getOctokit(token)
 const api = octokit.rest;
 
 const context = gh.context.payload;
+async function run() {
+    const issue = await api.issues.get({
+        ...context.issue,
+        issue_number: context.issue.number
+    });
 
-const issue = api.issues.get({
-    ...context.issue,
-    issue_number: context.issue.number
-});
-
-console.log(`Issue #${context.issue.number}: ${JSON.stringify(issue.data)}`)
+    console.log(`Issue #${context.issue.number}: ${JSON.stringify(issue.data)}`)
+};
+run()
