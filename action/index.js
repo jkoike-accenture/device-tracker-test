@@ -1,7 +1,8 @@
 const gh = require("@actions/github");
 const core = require("@actions/core")
 const token = core.getInput("auth_token", {required: true});
-const api = gh.getOctokit(token)
+const octokit = gh.getOctokit(token)
+const api = octokit.rest;
 
 const context = gh.context.payload;
 
