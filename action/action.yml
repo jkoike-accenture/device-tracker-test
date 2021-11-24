@@ -1,18 +1,5 @@
 name: "device-tracker-action"
 description: "Updates the device tracker. Beep boop"
-inputs:
-  action:
-    description: Issue event triggering this action
-    required: true
-    default: ${{ github.event.action }}
-  issue:
-    description: Full issue event payload from this action
-    required: true
-    default: ${{ github.event.issue }}
-  labels:
-    description: Issue labels
-    required: true
-    default: ${{ github.event.label }}
 runs:
   using: "node12"
   main: "index.js"

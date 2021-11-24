@@ -3,10 +3,6 @@ const gh = {
     api: require("@actions/github")
 };
 
-const issue = {
-    type: gh.core.input("action", {required: true}),
-    payload: gh.core.input("issue", {required: true}),
-    labels: gh.core.input("labels", {required: true})
-}
+const issue = gh.api.context.payload
 
 console.log(`Action payload: ${issue}`)
