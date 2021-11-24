@@ -1,0 +1,17 @@
+name: Checkout Device
+description: Checkout a device
+title: Device Checkout
+labels: ["automation"]
+body:
+  - type: input
+    id: device
+    attributes:
+      label: Device ID
+      description: What device are you checking out? (Look at the device table for the tracker ID)
+    validations:
+      required: true
+  - type: input
+    id: return_date
+    attributes:
+      label: Return Date
+      description: When do you expect to return the device? (dd-mm-yyyy format, or N/A if you don't have an expected return date)

@@ -3,10 +3,6 @@ description: Register a new device
 title: "Device Creation"
 labels: ["automation"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Time to register your device
   - type: dropdown 
     id: device_type_major
     attributes:
