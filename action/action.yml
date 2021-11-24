@@ -14,5 +14,5 @@ inputs:
     required: true
     default: ${{ github.event.label }}
 runs:
-  using: "node16"
+  using: "node12"
   main: "index.js"
