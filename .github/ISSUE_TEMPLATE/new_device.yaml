@@ -1,7 +1,7 @@
 name: Create a device
 description: Register a new device
 title: "Device Creation"
-labels: []
+labels: ["automation"]
 body:
   - type: markdown
     attributes:
