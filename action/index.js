@@ -7,7 +7,8 @@ const api = octokit.rest;
 const context = gh.context.payload;
 
 const issue = api.issues.get({
-    ...context.issue
+    ...context.issue,
+    issue_number: context.issue.number
 });
 
 console.log(`Issue: ${JSON.stringify(issue)}`)
