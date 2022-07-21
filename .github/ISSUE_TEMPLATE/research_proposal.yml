@@ -1,6 +1,6 @@
 name: Research Proposal
 description: Propose a new Reasearch or Development project
-title: Device Checkout
+title: Research Proposal
 labels: ["automation", "research"]
 body:
   - type: input
