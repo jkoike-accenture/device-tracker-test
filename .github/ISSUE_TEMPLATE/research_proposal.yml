@@ -1,0 +1,45 @@
+name: Research Proposal
+description: Propose a new Reasearch or Development project
+title: Device Checkout
+labels: ["automation", "research"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Project Name
+      description: |
+        Short (< 10 word) but descriptive internal title for your research project.
+        We will help you with an appropriate name for public publication if applicable
+      placeholder: e.g. AWS MTC Automation
+    validations:
+      required: true
+  - type: input
+    id: description
+    attributes:
+      label: Description
+      description: ~1 paragraph summary of your research goals
+      placeholder: e.g Create a tool to automate creation of IAM policies for MTC testing
+  - type: input
+    id: goals
+    attributes:
+      label: Deliverables/Measures of Success
+      description: Summary of your deliverables or other measures of success
+      placeholder: | 
+        e.g. A functional python script with basic questionnaire functionality that outputs a series of IAM policies
+        applicable to MTCs
+  - type: input
+    id: duration
+    attributes:
+      label: Time Requested
+      description: How long do you think it will take to achieve your goals above?
+      placeholder: 3-5 weeks
+  - type: input
+    id: previous_work
+    attributes:
+      label: Previous Works
+      description: If you are aware of any previous research in this area, please list below
+  - type: input
+    id: resources
+    attributes:
+      label: Resources
+      description: Please list any required equipment, research targets, licenses, and any other support you may require here
