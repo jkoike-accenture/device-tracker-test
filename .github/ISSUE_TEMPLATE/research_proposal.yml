@@ -19,6 +19,8 @@ body:
       label: Description
       description: ~1 paragraph summary of your research goals
       placeholder: e.g Create a tool to automate creation of IAM policies for MTC testing
+    validations:
+      required: true
   - type: input
     id: goals
     attributes:
@@ -27,12 +29,16 @@ body:
       placeholder: | 
         e.g. A functional python script with basic questionnaire functionality that outputs a series of IAM policies
         applicable to MTCs
+      validations:
+        required: true
   - type: input
     id: duration
     attributes:
       label: Time Requested
       description: How long do you think it will take to achieve your goals above?
       placeholder: 3-5 weeks
+    validations:
+      required: true
   - type: input
     id: previous_work
     attributes:
