@@ -29,8 +29,8 @@ body:
       placeholder: | 
         e.g. A functional python script with basic questionnaire functionality that outputs a series of IAM policies
         applicable to MTCs
-      validations:
-        required: true
+    validations:
+      required: true
   - type: input
     id: duration
     attributes:
