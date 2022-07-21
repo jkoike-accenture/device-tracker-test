@@ -13,7 +13,7 @@ body:
       placeholder: e.g. AWS MTC Automation
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: description
     attributes:
       label: Description
@@ -21,7 +21,7 @@ body:
       placeholder: e.g Create a tool to automate creation of IAM policies for MTC testing
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: goals
     attributes:
       label: Deliverables/Measures of Success
@@ -39,12 +39,12 @@ body:
       placeholder: 3-5 weeks
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: previous_work
     attributes:
       label: Previous Works
       description: If you are aware of any previous research in this area, please list below
-  - type: input
+  - type: textarea
     id: resources
     attributes:
       label: Resources
